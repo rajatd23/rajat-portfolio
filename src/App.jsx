@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const profileImage = "/rajat-photo.jpeg";
+const profileImage = `${import.meta.env.BASE_URL}rajat-photo.jpeg`;
 
 const profile = {
   name: "Rajat Ramesh Dungarwal",
@@ -269,7 +269,7 @@ export default function App() {
           </nav>
 
           <a
-            href="/Rajat-Resume.pdf"
+            href={`${import.meta.env.BASE_URL}Rajat-Resume.pdf`}
             download
             className="hidden md:inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 to-sky-400 px-6 py-2.5 text-sm font-bold text-slate-950 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/50 hover:scale-105"
           >
